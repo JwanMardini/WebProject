@@ -1,0 +1,220 @@
+body{
+    background-color: beige;
+}
+
+.container{
+    display : flex;
+    flex-direction : column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    order: 1;
+    width: 200px;
+    height: 150px;
+
+}
+
+.shoppingChart{
+    order: 4;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+
+}
+
+.shoppingChart:hover{
+    transform: scale(1.1);
+}
+
+.searchBar{
+    order: 2;
+    width: 75%;
+    height: 40px;
+    border-radius: 10px;
+    border: 0.5px solid gray;
+
+}
+
+.searchBar:hover{
+    border: 1px solid black;
+}
+
+.searchButton{
+    order: 3;
+    height: 40px;
+    background-color: burlywood;
+    border-radius: 10px;
+    border: none;
+}
+
+.subTitle{
+    font-size: 24px;
+}
+
+.Box{
+    margin : 10px;
+    padding : 10px;
+    display: flex;
+}
+
+.bookBox{
+    border : none;
+    margin : 10px;
+    padding : 10px;
+    display: flex;
+    flex-direction : column;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.bookBox:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.sub-logo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.sub-logo img{
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 5px;
+    margin-top: 15px
+}
+
+.bookBox img{
+    border-radius: 10px;
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pageNum{
+    color: gray;
+    font-size: small;
+}
+
+.description{
+    margin: 0;
+}
+
+.authorName{
+    color: gray;
+    font-size: medium;
+}
+
+.shoppingButton{
+    height: 40px;
+    background-color: burlywood;
+    border-radius: 10px;
+    border: none;
+}
+
+.shoppingButton:hover, .searchButton:hover{
+    background-color: brown;
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer a{
+    margin: 20px;
+    color: brown;
+}
+
+/* media queries */
+@media (max-width: 600px) {
+
+    .logo{
+        width: 120px;
+        height: 100px;
+        order: 0;
+    }
+
+    .shoppingChart{
+        width: 30px;
+        height: 30px;
+    }
+
+    .searchBar{
+        order: 1;
+        width: 200px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .searchButton{
+        order: 2;
+        height: 25px;
+        font-size: 10px;
+        visibility: hidden;
+    }
+
+    .subTitle{
+        font-size: 18px;
+        width: 100px;
+        margin-top: 8px;
+        margin-left: 8px;
+    }
+
+    .Box{
+        flex-direction: column;
+        width: 90%;
+
+
+    }
+
+    .bookBox{
+        width: 90%;
+    }
+
+    .sub-logo{
+       margin-left: 18px; 
+
+    }
+
+    .sub-logo img{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+    .titleContainer{
+        flex-direction: column;
+    }
+
+    .description{
+        margin-top: 10px;
+
+    }
+
+    footer{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    footer a{
+        margin: 2px;
+    }
+
+
+
+}
