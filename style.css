@@ -215,6 +215,11 @@ footer a{
         margin: 2px;
     }
 
+    .bookBox:hover{
+        transform: scale(1.0);
+        box-shadow: none;
+    }
+
 
 
 }
