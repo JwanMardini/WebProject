@@ -182,12 +182,13 @@ footer a {
     .Box {
         flex-direction: column;
         width: 90%;
+        margin: 0px;
     }
 
     .bookBox {
         width: 100%;
         max-width: none;
-        border: 1px solid black;
+
     }
 
     .sub-logo {
@@ -232,22 +233,29 @@ footer a {
 .shoppingCartItems{
     width: 70%;
 }
+
 .shoppingCartItem{
     display: flex;
+    justify-content: center;
     margin: 1rem 0;
-
 }
-.shoppingCartItem img{
+.shoppingCartItem .bookImg{
     width: 100px;
     height: 100px;
     border-radius: 10px;
 }
+
+.removeIcon{
+    width: 18px;
+    height: 15px;
+    margin-left: 10%;
+}
+
 .shoppingCartItemDetails{
     margin-left: 1rem;
 }
 .shoppingCartTotal{
     width: 25%;
-    border: 1px solid black;
     padding: 1rem;
     border-radius: 10px;
 }
@@ -267,4 +275,3 @@ footer a {
     color: white;
 
 }
-
