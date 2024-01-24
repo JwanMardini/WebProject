@@ -36,8 +36,24 @@
         </div>
         <!-- UX section -->
         <header class="sub-logo" id="ux"> 
-            <img src="assets/img/UIUX.png" alt="CSS Logo">
-            <h2 class="subTitle">UI&UX</h2>
+            <div>
+                <img src="assets/img/UIUX.png" alt="CSS Logo">
+                <h2 class="subTitle">UI&UX</h2>
+            </div>
+
+            <div>
+                <label class="sortByLabel" for="sort"><b>Sort by:</b></label>
+                <select class="" name="sort" id="sort" onchange="window.location.href=this.value;">
+                    <optgroup label="Sort Option">
+                        <option value="index.html">Default</option>
+                        <option value="price.html">Price</option>
+                        <option value="Author">Author</option>
+                        <option value="Page Number">Page Number</option>
+                    </optgroup>
+
+                </select>
+            </div>
+
         </header>
         <section class="Box">
             <div class="bookBox">
@@ -123,8 +139,10 @@
 
         <!-- Html section -->
         <header class="sub-logo" id="html">
-            <img src="assets/img/html-logo.png" alt="HTML Logo">
-            <h2 class="subTitle">HTML</h2>
+            <div>
+                <img src="assets/img/html-logo.png" alt="HTML Logo">
+                <h2 class="subTitle">HTML</h2>
+            </div>
         </header>
         <section class="Box">
             <div class="bookBox">
@@ -210,8 +228,10 @@
 
         <!-- css section -->
         <header class="sub-logo" id="css">
-            <img src="assets/img/css-logo.png" alt="css Logo">
-            <h2 class="subTitle">CSS</h2>
+            <div>
+                <img src="assets/img/css-logo.png" alt="css Logo">
+                <h2 class="subTitle">CSS</h2>
+            </div>
         </header>
         <section class="Box">
             <div class="bookBox">
@@ -297,8 +317,10 @@
 
         <!-- javascript section -->
         <header class="sub-logo" id="js">
-            <img src="assets/img/js-logo.png" alt="JS Logo">
-            <h2 class="subTitle">Javascript</h2>
+            <div>
+                <img src="assets/img/js-logo.png" alt="JS Logo">
+                <h2 class="subTitle">Javascript</h2>
+            </div>
         </header>
         <section class="Box">
             <div class="bookBox">
@@ -385,7 +407,7 @@
 
         <!-- End of website section -->
         <footer>
-            <p>&copy; 2024 Website Name. All rights reserved.</p>
+            <p>&copy; 2024 Front Library. All rights reserved.</p>
             <nav>
                 <a href="#ux">UX&UI</a>
                 <a href="#html">HTML</a>

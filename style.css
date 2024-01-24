@@ -117,6 +117,40 @@ body {
     flex-direction: row;
     margin-top: 20px;
     margin-bottom: 0px;
+    justify-content: space-between;
+}
+
+.sub-logo div {
+    display: flex;
+    align-items: center;
+    margin-right: 12%;
+}
+
+.sub-logo > div > h2{
+    padding-top: 20px;
+}
+
+.sortByLabel{
+    margin-right: 10px;
+}
+
+.sub-logo div select {
+    background-color: beige;
+    border: 1px solid grey;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sub-logo div select:hover {
+    border-color: brown;
+}
+
+/* Style the dropdown options */
+.sub-logo div select optgroup option {
+    background-color: beige;
+    color: #333;
+    height: 10px;
 }
 
 .sub-logo img {
@@ -138,6 +172,11 @@ body {
     flex-direction: column;
 }
 
+.titleContainer h3 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
 .pageNum {
     color: gray;
     font-size: small;
@@ -146,7 +185,7 @@ body {
 .description {
     margin: 0;
     flex-shrink: 1;
-    font-size: small;
+    font-size: medium;
     text-align: center;
 }
 
