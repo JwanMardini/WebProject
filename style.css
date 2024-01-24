@@ -25,7 +25,7 @@ body {
 
 .shoppingChart {
     order: 4;
-    width: 5%;
+    width: 100%;
     max-width: 50px;
     height: auto;
 }
@@ -50,6 +50,37 @@ body {
     border-radius: 10px;
     border: none;
     margin-right: 10%;
+}
+
+.categories{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 80%;
+
+}
+
+.categories label{
+    margin-left: 1%;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    font-size: large;
+}
+
+.categories a{
+    margin-left: 1%;
+    text-decoration: none;
+    color: brown;
+    height: 30px;
+    padding: 8px;
+    text-align: center;
+
+}
+
+.categories a:hover{
+    background-color: brown;
+    color: white;
 }
 
 .subTitle {
@@ -114,6 +145,9 @@ body {
 
 .description {
     margin: 0;
+    flex-shrink: 1;
+    font-size: small;
+    text-align: center;
 }
 
 .authorName {
@@ -144,6 +178,8 @@ footer a {
     color: brown;
 }
 
+
+
 /* media queries */
 @media (max-width: 600px) {
     .logo {
@@ -158,7 +194,6 @@ footer a {
 
     .searchBar {
         order: 1;
-        width: 100%;
         max-width: none; 
         height: 25px;
         font-size: 10px;
@@ -166,11 +201,21 @@ footer a {
 
     .searchButton {
         order: 2;
-        width: 100%;
         max-width: none;
         height: 25px;
         font-size: 10px;
-        visibility: hidden;
+    }
+
+    .categories{
+        margin-top: 20px;
+    }
+
+    .categories label{
+        font-size: small;
+    }
+
+    .categories a{
+        font-size: small;
     }
 
     .subTitle {
@@ -182,14 +227,14 @@ footer a {
 
     .Box {
         flex-direction: column;
-        width: 90%;
+        gap: 20px;
+        width: 80%;
         margin: 0px;
     }
 
     .bookBox {
         width: 100%;
         max-width: none;
-
     }
 
     .sub-logo {
@@ -219,6 +264,14 @@ footer a {
         margin: 2px;
     }
 }
+
+@media screen and (hover: none) {
+    .bookBox:hover {
+        transform: none; /* Reset the transform on touch devices */
+        box-shadow: none; /* Reset the box-shadow on touch devices */
+    }
+}
+
 
 /* shopping cart */
 
@@ -276,5 +329,4 @@ footer a {
 .shoppingCartTotal button:hover{
     background-color: brown;
     color: white;
-
 }
